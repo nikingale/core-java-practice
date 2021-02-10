@@ -3,18 +3,19 @@ package com.github.nikingale.inheritance;
 public class TestAnimal {
 
     public static void main(String[] args) {
-        Animal lion = new Lion();
+        Lion lion = new Lion();
         lion.eat();
         lion.sleep();
         lion.roam();
         lion.makeNoise();
 
-        Animal deer = new Deer("grass");
+        Deer deer = new Deer("grass");
+        deer.eat();
         deer.sleep();
         deer.roam();
         deer.makeNoise();
 
-        Animal wolf = new Wolf();
+        Wolf wolf = new Wolf();
         wolf.eat();
         wolf.sleep();
         wolf.roam();
