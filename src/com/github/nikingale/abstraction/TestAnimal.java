@@ -24,6 +24,14 @@ public class TestAnimal {
         wolf.sleep();
         wolf.roam();
         wolf.makeNoise();
+
+        PetDog doggy = new PetDog();
+        doggy.eat();
+        doggy.sleep();
+        doggy.roam();
+        doggy.makeNoise();
+        doggy.beFriendly();
+        doggy.play();
     }
 
 }
