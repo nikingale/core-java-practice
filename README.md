@@ -1,2 +1,2 @@
 # core-java-practice
-Core Java Practice
+Object oriented programming based implementation of core java concepts
