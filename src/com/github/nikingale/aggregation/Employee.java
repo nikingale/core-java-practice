@@ -6,16 +6,39 @@ public class Employee {
     private String employeeName;
     Address address;
 
+    public Employee() {
+    }
+
     public Employee(int employeeID, String employeeName, Address address) {
         this.employeeID = employeeID;
         this.employeeName = employeeName;
         this.address = address;
     }
 
-    void displayEmployee() {
+    public int getEmployeeID() {
+        return employeeID;
+    }
+
+    public void setEmployeeID(int employeeID) {
+        this.employeeID = employeeID;
+    }
+
+    public String getEmployeeName() {
+        return employeeName;
+    }
+
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public void displayEmployee() {
 
         System.out.println("\nEmployee ID - " + employeeID + "\nEmployee Name - " + employeeName);
-        System.out.println("Employee Address(City, State, Country) - " + address.city + " " + address.state + " " + address.country);
+        System.out.println("Employee Address - " + address.city + " " + address.state + " " + address.country);
     }
 
 }
