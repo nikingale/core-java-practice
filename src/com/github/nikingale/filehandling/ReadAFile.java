@@ -10,7 +10,7 @@ public class ReadAFile {
 
     public static void main(String[] args) {
         try {
-            File file = new File("src/resources/file.txt");
+            File file = new File("src/resources/file");
             FileReader fileReader = new FileReader(file);
             BufferedReader reader = new BufferedReader(fileReader);
 
