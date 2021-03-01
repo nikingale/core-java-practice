@@ -9,6 +9,10 @@ public class TestJukebox {
     public static void main(String[] args) {
         Jukebox jukebox = new Jukebox();
         jukebox.play();
+
+        System.out.println();
+        AlphaJukebox alphaJukebox = new AlphaJukebox();
+        alphaJukebox.play();
     }
 
 }
