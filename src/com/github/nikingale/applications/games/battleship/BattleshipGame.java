@@ -2,6 +2,10 @@ package com.github.nikingale.applications.games.battleship;
 
 import java.util.Scanner;
 
+/**
+ * @author Nikhil Ingale 08-04-2020
+ */
+
 public class BattleshipGame {
 
     int[] locationCells;

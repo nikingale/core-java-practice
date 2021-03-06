@@ -1,5 +1,9 @@
 package com.github.nikingale.applications.games.battleship;
 
+/**
+ * @author Nikhil Ingale 08-04-2020
+ */
+
 public class BattleshipSetup {
 
     BattleshipGame run;
