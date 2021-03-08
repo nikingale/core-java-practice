@@ -1,5 +1,9 @@
 package com.github.nikingale.typecasting;
 
+/**
+ * @author Nikhil Ingale 29-03-2020
+ */
+
 public class IntegerAndString {
 
     public static void main(String[] args) {

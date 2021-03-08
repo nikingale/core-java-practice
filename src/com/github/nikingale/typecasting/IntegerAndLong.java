@@ -1,6 +1,10 @@
 package com.github.nikingale.typecasting;
 
-public class IntAndLong {
+/**
+ * @author Nikhil Ingale 29-03-2020
+ */
+
+public class IntegerAndLong {
 
     public static void main(String[] args) {
         System.out.println("Integer to Long-");
