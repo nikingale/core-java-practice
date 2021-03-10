@@ -2,6 +2,10 @@ package com.github.nikingale.applications.bank;
 
 import java.util.Scanner;
 
+/**
+ * @author Nikhil Ingale 08-04-2020
+ */
+
 public class AccountMenu {
 
     public void menu(Account account) {

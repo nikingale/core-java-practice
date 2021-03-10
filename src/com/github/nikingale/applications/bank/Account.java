@@ -3,6 +3,10 @@ package com.github.nikingale.applications.bank;
 import java.util.*;
 import java.lang.*;
 
+/**
+ * @author Nikhil Ingale 08-04-2020
+ */
+
 public class Account {
 
     private int accountNumber;
@@ -39,10 +43,7 @@ public class Account {
     }
 
     boolean isValid(int accountPassword) {
-        if (getAccountPassword() == accountPassword) {
-            return true;
-        }
-        else return false;
+        return getAccountPassword() == accountPassword;
     }
 
     void displayAccount() {
@@ -94,8 +95,7 @@ public class Account {
     public float getTotalDepositedAmount() {
         float result = 0;
 
-        for (int index = 0; index < transactionList.size(); index++) {
-            AccountTransaction transaction = transactionList.get(index);
+        for (AccountTransaction transaction : transactionList) {
             if (transaction.getTransactionType() == TransactionType.DEPOSIT) {
                 result += transaction.getTransactionAmount();
             }
@@ -106,8 +106,7 @@ public class Account {
     public float getTotalWithdrawnAmount() {
         float result = 0;
 
-        for (int index = 0; index < transactionList.size(); index++) {
-            AccountTransaction transaction = transactionList.get(index);
+        for (AccountTransaction transaction : transactionList) {
             if (transaction.getTransactionType() == TransactionType.WITHDRAWAL) {
                 result += transaction.getTransactionAmount();
             }
@@ -117,8 +116,7 @@ public class Account {
 
     public void heavyTransactions() {
         int heavyTransactionsCount = 0;
-        for (int index = 0; index < transactionList.size(); index++) {
-            AccountTransaction transaction = transactionList.get(index);
+        for (AccountTransaction transaction : transactionList) {
             if (transaction.getTransactionAmount() > 50000) {
                 System.out.println(transaction);
                 heavyTransactionsCount++;
