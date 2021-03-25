@@ -79,9 +79,9 @@ public class Account {
                 accountBalance = accountBalance - amount;
                 System.out.println("\n₹" + amount + " withdrawn.");
                 printBalance();
+                AccountTransaction transaction = new AccountTransaction(amount, TransactionType.WITHDRAWAL);
+                transactionList.add(transaction);
             }
-            AccountTransaction transaction = new AccountTransaction(amount, TransactionType.WITHDRAWAL);
-            transactionList.add(transaction);
         }
         else {
             System.out.println("Enter valid amount!");
