@@ -1,6 +1,6 @@
 package com.github.nikingale.abstraction;
 
-public class Student {
+public class Student implements Comparable<Student> {
 
     String name;
     int rollNo;

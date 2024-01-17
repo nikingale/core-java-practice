@@ -1,7 +1,6 @@
 package com.github.nikingale.abstraction;
 
 import java.util.*;
-
 public class TestStudent {
 
     public static void main(String[] args) {
@@ -15,6 +14,9 @@ public class TestStudent {
             System.out.println(st.name + " " + st.rollNo+ " " + st.age);
         }
 
+        Collections.sort(studentList);
+
+        //Using anonymous class
         Collections.sort(studentList, new Comparator<Student>() {
             @Override
             public int compare(Student o1, Student o2) {
@@ -35,6 +37,7 @@ public class TestStudent {
 
         System.out.println("-------------------------------------------");
 
+        //Lambda Expression
         studentList.forEach(student -> System.out.println(student.name));
     }
 }
