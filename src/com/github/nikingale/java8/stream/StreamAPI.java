@@ -12,6 +12,13 @@ public class StreamAPI {
         numbers.add(8);
         numbers.add(20);
 
+        List<String> names = new ArrayList<>();
+        names.add("Nikhil");
+        names.add("Shriyog");
+        names.add("Shreyas");
+        names.add("Ram");
+        names.add("Sujay");
+
         System.out.println("Printing the collection : " + numbers);
 
         System.out.println();
@@ -25,5 +32,9 @@ public class StreamAPI {
         System.out.println();
         List<Integer> sortedResult = numbers.stream().sorted().collect(Collectors.toList());
         System.out.println("Sorted Result : " + sortedResult);
+
+        System.out.println();
+        List<String> filteredNames = names.stream().filter(s -> s.startsWith("S")).sorted().collect(Collectors.toList());
+        System.out.println("Names starting with S: " + filteredNames);
     }
 }
