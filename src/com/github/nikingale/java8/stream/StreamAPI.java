@@ -23,18 +23,30 @@ public class StreamAPI {
 
         System.out.println();
         List<Integer> result = numbers.stream().filter(n -> n % 2 == 0).collect(Collectors.toList());
-        System.out.println("Printing the even number stream list : " + result);
+        System.out.println("Even number stream list : " + result);
 
-        System.out.println();
         List<Integer> mapResult = numbers.stream().map(n -> n + 10).collect(Collectors.toList());
-        System.out.println("Map result : " + mapResult);
+        System.out.println("Map result (number + 10) : " + mapResult);
+
+        List<Integer> sortedResult = numbers.stream().sorted().collect(Collectors.toList());
+        System.out.println("Sorted numbers result : " + sortedResult);
+
+        Optional<Integer> maxNumber = numbers.stream().max(Integer::compareTo);
+        System.out.println("Max number is : " + maxNumber);
 
         System.out.println();
-        List<Integer> sortedResult = numbers.stream().sorted().collect(Collectors.toList());
-        System.out.println("Sorted Result : " + sortedResult);
+        System.out.println("Printing the collection : " + names);
 
         System.out.println();
         List<String> filteredNames = names.stream().filter(s -> s.startsWith("S")).sorted().collect(Collectors.toList());
-        System.out.println("Names starting with S: " + filteredNames);
+        System.out.println("List of names starting with S: " + filteredNames);
+
+        String filteredNamesString = names.stream().filter(s -> s.startsWith("S")).sorted().collect(Collectors.joining("-"));
+        System.out.println("FilteredNamesString : " + filteredNamesString);
+
+        List<Integer> mappedStream = names.stream().map(String::length).collect(Collectors.toList());
+        System.out.println("Names length: " + mappedStream);
+
+        System.out.println();
     }
 }
