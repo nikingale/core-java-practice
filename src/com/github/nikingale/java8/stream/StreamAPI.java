@@ -46,7 +46,5 @@ public class StreamAPI {
 
         List<Integer> mappedStream = names.stream().map(String::length).collect(Collectors.toList());
         System.out.println("Names length: " + mappedStream);
-
-        System.out.println();
     }
 }
