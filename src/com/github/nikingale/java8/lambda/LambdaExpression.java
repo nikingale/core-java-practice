@@ -5,8 +5,7 @@ public class LambdaExpression {
     public static void main(String[] args) {
         //Example1
         Operation addition = (a, b) -> a + b;
-        int result = addition.operate(2,3);
-        System.out.println(result);
+        System.out.println(addition.operate(2,3));
 
         //Example2
         ArrayList<Integer> myList = new ArrayList<>();
