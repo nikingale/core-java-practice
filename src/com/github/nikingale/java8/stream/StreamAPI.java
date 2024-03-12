@@ -18,6 +18,7 @@ public class StreamAPI {
         names.add("Shreyas");
         names.add("Ram");
         names.add("Sujay");
+        names.add("Ram");
 
         System.out.println("Printing the collection : " + numbers);
 
@@ -46,5 +47,8 @@ public class StreamAPI {
 
         List<Integer> mappedStream = names.stream().map(String::length).collect(Collectors.toList());
         System.out.println("Names length: " + mappedStream);
+
+        List<String> distinctNames = names.stream().distinct().collect(Collectors.toList());
+        System.out.println("Distinct Names - " + distinctNames);
     }
 }
