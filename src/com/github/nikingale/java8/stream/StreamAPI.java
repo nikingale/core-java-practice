@@ -2,9 +2,14 @@ package com.github.nikingale.java8.stream;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StreamAPI {
     public static void main(String[] args) {
+
+        Stream<Integer> myStream = Stream.of(1, 2, 3);
+        myStream.forEach(System.out::println);
+
         List<Integer> numbers = new ArrayList<>();
         numbers.add(1);
         numbers.add(2);
