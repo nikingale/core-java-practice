@@ -45,7 +45,7 @@ public class StreamAPI {
 
         System.out.println();
         List<String> filteredNames = names.stream().filter(s -> s.startsWith("S")).sorted().collect(Collectors.toList());
-        System.out.println("List of names starting with S- " + filteredNames);
+        System.out.println("List of names starting with S: " + filteredNames);
 
         String filteredNamesString = names.stream().filter(s -> s.startsWith("S")).sorted().collect(Collectors.joining("-"));
         System.out.println("FilteredNamesString : " + filteredNamesString);
@@ -54,6 +54,6 @@ public class StreamAPI {
         System.out.println("Names length: " + mappedStream);
 
         List<String> distinctNames = names.stream().distinct().collect(Collectors.toList());
-        System.out.println("Distinct Names - " + distinctNames);
+        System.out.println("Distinct Names: " + distinctNames);
     }
 }
