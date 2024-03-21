@@ -15,7 +15,7 @@ public class SingASong implements Runnable {
     }
 
     public void singTheSong() {
-        System.out.println("We Will We Will Rock You!");
+        System.out.println("WE WILL WE WILL ROCK YOU!");
     }
 
 }
