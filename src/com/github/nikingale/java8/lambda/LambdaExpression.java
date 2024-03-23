@@ -23,7 +23,7 @@ public class LambdaExpression {
         List<String> names = new ArrayList<>();
         names.add("Shriyog");
         names.add("Ram");
-        names.add("Jay");
+        names.add("Shreyas");
 
         names.forEach(name -> System.out.println("Hello " + name));
     }
